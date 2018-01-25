@@ -109,7 +109,7 @@ public final class Request {
     /**
      * Moves the internal occurrence counter by one.
      */
-    boolean moveNext() {
+    public boolean moveNext() {
         if (hasNext()) {
             triggerDate = getNextTriggerDate();
         } else {
