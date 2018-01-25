@@ -70,7 +70,7 @@ public class TriggerReceiver extends AbstractTriggerReceiver {
         notification.show();
 
         if (options.isInfiniteTrigger()) {
-            manager.schedule(new Request(options), this.getClass());
+            manager.schedule(new Request(options).moveNext(), this.getClass());
         }
 
         if (!isUpdate) {
